@@ -26,10 +26,17 @@ function generatePassword() {
     alert("You must enter a number between 8 - 128!")
   }
   else {
-      alert("Your password will be" + length + " Characters long.");
+      alert("Your password will be " + length + " Characters long.");
   }
 
-  lowercase
+  // lowercase characters
+  Haslowercase = confirm("Do you want lowercase characters?");
+  if (Haslowercase) {
+      var turnTolowercase = alert("Your password will have lowercase characters.");
+  }
+  else {
+      alert("Your password will not have lowercase characters.");
+  }
 }
    
 
