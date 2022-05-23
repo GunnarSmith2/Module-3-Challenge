@@ -1,7 +1,6 @@
-// Variables for character types 
-var char = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
-var numeric = "0123456789";
-var symbols = "!@#$%^&*_?-=+";
+//Character Variables 
+var uppercase = "ABCEDFGHIJKLMNOPQRSTUVWXYZ"
+var lowercase = "abcdefghijklmnopqrstuvwxyz"
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
@@ -12,8 +11,12 @@ function writePassword() {
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
-
 }
+
+function generatePassword() {}
+   
+
+
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
