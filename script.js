@@ -20,10 +20,10 @@ function generatePassword() {
   // users are asked for password length
   var length = prompt("How many characters would you like you password to be? (Must be between 8 and 128)");
   if(isNaN(length)){
-    alert("you must input a number!")
+    alert("you must input a valid number!")
   }
   if(length<8 || length> 128) {
-    alert("You must enter a number between 8 - 128!")
+    return("You must enter a number between 8 - 128!")
   }
   else {
       alert("Your password will be " + length + " Characters long.");
@@ -64,7 +64,16 @@ function generatePassword() {
   else {
       alert("Your password will not have special characters.");
   }
+
+  // if all character types are selected no 
+  if (Haslowercase === false && HasUppercase === false && hasNumbers === false && hasSpecial === false) {
+      return("Please select at least one character type.")
+  };
+
+
 }
+ 
+
    
 
 
