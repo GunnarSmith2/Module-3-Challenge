@@ -55,6 +55,15 @@ function generatePassword() {
   else {
       alert("Your password will not have numbers.");
   }
+
+  // Special characters input for password
+  hasSpecial = confirm("Do you want special characters in your password?");
+  if (hasSpecial) {
+      alert("your password will have special characters.");
+  }
+  else {
+      alert("Your password will not have special characters.");
+  }
 }
    
 
