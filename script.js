@@ -25,6 +25,11 @@ function generatePassword() {
   if(length<8 || length> 128) {
     alert("You must enter a number between 8 - 128!")
   }
+  else {
+      alert("Your password will be" + length + " Characters long.");
+  }
+
+  
 }
    
 
