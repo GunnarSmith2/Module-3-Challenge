@@ -1,6 +1,9 @@
 //Character Variables 
-var uppercase = "ABCEDFGHIJKLMNOPQRSTUVWXYZ"
-var lowercase = "abcdefghijklmnopqrstuvwxyz"
+var uppercase = "ABCEDFGHIJKLMNOPQRSTUVWXYZ";
+var lowercase = "abcdefghijklmnopqrstuvwxyz";
+var numbers = "0123456789";
+var special = "!@#$%^&*-_=+?{}[]";
+var chosen = "";
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
