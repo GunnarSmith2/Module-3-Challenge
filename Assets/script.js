@@ -12,11 +12,22 @@ var chosen = "";
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
-
   passwordText.value = password;
 }
 
-function generatePassword() {}
+function generatePassword() {
+  //random generator password will begin here and return final password"
+  var result = "";
+
+  // users are asked for password length
+  var length = prompt("How many characters would you like you password to be? (Must be between 8 and 128)");
+  if(isNaN(length)){
+    alert("you must input a number!")
+  }
+  if(length<8 || length> 128) {
+    alert("You must enter a number between 8 - 128!")
+  }
+}
    
 
 
