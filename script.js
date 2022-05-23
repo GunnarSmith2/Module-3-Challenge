@@ -9,13 +9,6 @@ var special = "!@#$%^&*-_=+?{}[]";
 var chosen = [];
 
 
-// Write password to the #password input
-function writePassword() {
-  var password = generatePassword();
-  var passwordText = document.querySelector("#password");
-  passwordText.value = password;
-}
-
 function generatePassword() {
   // users are asked for password length
   var length = prompt("How many characters would you like you password to be? (Must be between 8 and 128)");
@@ -84,11 +77,22 @@ function generatePassword() {
       chosen = chosen + special;
   }
 
-  
-}
+  // final password return
+  let finalPassword = ""
+  for (let i = 0; i < length; i++) {
+      let rng =[Math.floor(Math.random() * chosen.length)];
+      finalPassword = finalPassword + chosen[rng];
+  }
+  return finalPassword;
+};
  
 
-   
+  // Write password to the #password input
+function writePassword() {
+    var password = generatePassword();
+    var passwordText = document.querySelector("#password");
+    passwordText.value = password;
+  } 
 
 
 
