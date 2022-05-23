@@ -26,3 +26,7 @@ THEN the password is either displayed in an alert or written to the page
 ![Alerts](https://user-images.githubusercontent.com/104172862/169740431-46cd1144-0f0a-4fa2-9fc8-f6a5e6a38b38.png)
 
 ![Site with password](https://user-images.githubusercontent.com/104172862/169740436-56d78af2-b953-4148-b266-35155f5f7c0a.png)
+
+# Deployed URL
+
+https://gunnarsmith2.github.io/Module-3-Random-Password/
