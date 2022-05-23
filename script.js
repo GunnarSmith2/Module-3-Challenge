@@ -70,7 +70,21 @@ function generatePassword() {
       return("Please select at least one character type.")
   };
 
+  // Selected character groups
+  if (Haslowercase) {
+      chosen = chosen + lowercase;
+  }
+  if (HasUppercase) {
+      chosen = chosen + uppercase;
+  }
+  if (hasNumbers) {
+      chosen = chosen + numbers;
+  }
+  if (hasSpecial) {
+      chosen = chosen + special;
+  }
 
+  
 }
  
 
