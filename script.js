@@ -6,7 +6,7 @@ var uppercase = "ABCEDFGHIJKLMNOPQRSTUVWXYZ";
 var lowercase = "abcdefghijklmnopqrstuvwxyz";
 var numbers = "0123456789";
 var special = "!@#$%^&*-_=+?{}[]";
-var chosen = "";
+var chosen = [];
 
 
 // Write password to the #password input
@@ -29,7 +29,7 @@ function generatePassword() {
       alert("Your password will be" + length + " Characters long.");
   }
 
-  
+  lowercase
 }
    
 
