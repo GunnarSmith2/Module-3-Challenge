@@ -39,12 +39,21 @@ function generatePassword() {
   }
 
   // upper case character input for password
-  Hasuppercase = confirm("Do you want uppercase characters?");
-  if (Hasuppercase) {
+  HasUppercase = confirm("Do you want uppercase characters?");
+  if (HasUppercase) {
       alert("Your password will have uppercase characters.");
   }
   else {
       alert("Your password will not have uppercase characters.");
+  }
+
+  // numbers input for password
+  hasNumbers = confirm("Do you want numbers in your password?");
+  if (hasNumbers) {
+      alert("Your password will have numbers.");
+  }
+  else {
+      alert("Your password will not have numbers.");
   }
 }
    
