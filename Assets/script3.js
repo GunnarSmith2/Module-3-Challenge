@@ -8,6 +8,7 @@ var numbers = "0123456789";
 var special = "!@#$%^&*-_=+?{}[]";
 var chosen = "";
 
+
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
@@ -16,9 +17,6 @@ function writePassword() {
 }
 
 function generatePassword() {
-  //random generator password will begin here and return final password"
-  var result = "";
-
   // users are asked for password length
   var length = prompt("How many characters would you like you password to be? (Must be between 8 and 128)");
   if(isNaN(length)){
