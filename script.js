@@ -29,13 +29,22 @@ function generatePassword() {
       alert("Your password will be " + length + " Characters long.");
   }
 
-  // lowercase characters
+  // lowercase character input for password
   Haslowercase = confirm("Do you want lowercase characters?");
   if (Haslowercase) {
       var turnTolowercase = alert("Your password will have lowercase characters.");
   }
   else {
       alert("Your password will not have lowercase characters.");
+  }
+
+  // upper case character input for password
+  Hasuppercase = confirm("Do you want uppercase characters?");
+  if (Hasuppercase) {
+      alert("Your password will have uppercase characters.");
+  }
+  else {
+      alert("Your password will not have uppercase characters.");
   }
 }
    
